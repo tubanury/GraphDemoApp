@@ -93,12 +93,6 @@ print(result?.node.id, result?.distance)
 
 ---
 
-## 📄 License
+## 🙋‍♂️ Conclusion
 
-MIT License – use freely with attribution.
-
----
-
-## 🙋‍♂️ Questions?
-
-Feel free to reach out via GitHub Issues or pull requests. Thanks for reviewing the project!
+Thanks for reviewing the project!
