@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		95623F242DD501AC007EBFCF /* GraphDemoKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 95623F232DD501AC007EBFCF /* GraphDemoKit.docc */; };
 		95623F2A2DD501AC007EBFCF /* GraphDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95623F1F2DD501AC007EBFCF /* GraphDemoKit.framework */; };
-		95623F2F2DD501AC007EBFCF /* GraphDemoKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95623F2E2DD501AC007EBFCF /* GraphDemoKitTests.swift */; };
-		95623F302DD501AC007EBFCF /* GraphDemoKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 95623F222DD501AC007EBFCF /* GraphDemoKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		95623F3D2DD501CF007EBFCF /* GraphNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95623F392DD501CF007EBFCF /* GraphNode.swift */; };
 		95623F3E2DD501CF007EBFCF /* EdgeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95623F3A2DD501CF007EBFCF /* EdgeData.swift */; };
 		95623F3F2DD501CF007EBFCF /* NodeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95623F3B2DD501CF007EBFCF /* NodeData.swift */; };
@@ -30,10 +28,8 @@
 
 /* Begin PBXFileReference section */
 		95623F1F2DD501AC007EBFCF /* GraphDemoKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GraphDemoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		95623F222DD501AC007EBFCF /* GraphDemoKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphDemoKit.h; sourceTree = "<group>"; };
 		95623F232DD501AC007EBFCF /* GraphDemoKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = GraphDemoKit.docc; sourceTree = "<group>"; };
 		95623F292DD501AC007EBFCF /* GraphDemoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphDemoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		95623F2E2DD501AC007EBFCF /* GraphDemoKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphDemoKitTests.swift; sourceTree = "<group>"; };
 		95623F392DD501CF007EBFCF /* GraphNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphNode.swift; sourceTree = "<group>"; };
 		95623F3A2DD501CF007EBFCF /* EdgeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeData.swift; sourceTree = "<group>"; };
 		95623F3B2DD501CF007EBFCF /* NodeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeData.swift; sourceTree = "<group>"; };
@@ -64,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				95623F212DD501AC007EBFCF /* GraphDemoKit */,
-				95623F2D2DD501AC007EBFCF /* GraphDemoKitTests */,
 				95623F202DD501AC007EBFCF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,18 +78,9 @@
 			children = (
 				95623F422DD501E1007EBFCF /* Graph.swift */,
 				95623F412DD501D3007EBFCF /* Models */,
-				95623F222DD501AC007EBFCF /* GraphDemoKit.h */,
 				95623F232DD501AC007EBFCF /* GraphDemoKit.docc */,
 			);
 			path = GraphDemoKit;
-			sourceTree = "<group>";
-		};
-		95623F2D2DD501AC007EBFCF /* GraphDemoKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				95623F2E2DD501AC007EBFCF /* GraphDemoKitTests.swift */,
-			);
-			path = GraphDemoKitTests;
 			sourceTree = "<group>";
 		};
 		95623F412DD501D3007EBFCF /* Models */ = {
@@ -115,7 +101,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95623F302DD501AC007EBFCF /* GraphDemoKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95623F2F2DD501AC007EBFCF /* GraphDemoKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
