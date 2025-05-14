@@ -13,7 +13,42 @@
 		95623EFF2DD500E7007EBFCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95623EFD2DD500E7007EBFCF /* Main.storyboard */; };
 		95623F012DD500E8007EBFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95623F002DD500E8007EBFCF /* Assets.xcassets */; };
 		95623F042DD500E8007EBFCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95623F022DD500E8007EBFCF /* LaunchScreen.storyboard */; };
+		95623F0C2DD5010B007EBFCF /* graph.json in Resources */ = {isa = PBXBuildFile; fileRef = 95623F0B2DD5010B007EBFCF /* graph.json */; };
+		95623F132DD50153007EBFCF /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95623F122DD50153007EBFCF /* GraphViewModel.swift */; };
+		95623F572DD502BF007EBFCF /* GraphDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95623F542DD502B4007EBFCF /* GraphDemoKit.framework */; };
+		95623F582DD502BF007EBFCF /* GraphDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 95623F542DD502B4007EBFCF /* GraphDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95623F532DD502B4007EBFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95623F4E2DD502B4007EBFCF /* GraphDemoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95623F1F2DD501AC007EBFCF;
+			remoteInfo = GraphDemoKit;
+		};
+		95623F552DD502B4007EBFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95623F4E2DD502B4007EBFCF /* GraphDemoKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 95623F292DD501AC007EBFCF;
+			remoteInfo = GraphDemoKitTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95623F592DD502BF007EBFCF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				95623F582DD502BF007EBFCF /* GraphDemoKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		95623EF42DD500E7007EBFCF /* GraphDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +59,9 @@
 		95623F002DD500E8007EBFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95623F032DD500E8007EBFCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95623F052DD500E8007EBFCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95623F0B2DD5010B007EBFCF /* graph.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = graph.json; sourceTree = "<group>"; };
+		95623F122DD50153007EBFCF /* GraphViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewModel.swift; sourceTree = "<group>"; };
+		95623F4E2DD502B4007EBFCF /* GraphDemoKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GraphDemoKit.xcodeproj; path = GraphDemoApp/Packages/GraphDemoKit/GraphDemoKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95623F572DD502BF007EBFCF /* GraphDemoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,7 @@
 			children = (
 				95623EF62DD500E7007EBFCF /* GraphDemoApp */,
 				95623EF52DD500E7007EBFCF /* Products */,
+				95623F442DD50218007EBFCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +96,58 @@
 		95623EF62DD500E7007EBFCF /* GraphDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				95623F142DD50161007EBFCF /* ViewModel */,
+				95623F102DD5012B007EBFCF /* View */,
+				95623F0D2DD5010F007EBFCF /* Resources */,
 				95623EF72DD500E7007EBFCF /* AppDelegate.swift */,
 				95623EF92DD500E7007EBFCF /* SceneDelegate.swift */,
-				95623EFB2DD500E7007EBFCF /* ViewController.swift */,
 				95623EFD2DD500E7007EBFCF /* Main.storyboard */,
 				95623F002DD500E8007EBFCF /* Assets.xcassets */,
 				95623F022DD500E8007EBFCF /* LaunchScreen.storyboard */,
 				95623F052DD500E8007EBFCF /* Info.plist */,
 			);
 			path = GraphDemoApp;
+			sourceTree = "<group>";
+		};
+		95623F0D2DD5010F007EBFCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95623F0B2DD5010B007EBFCF /* graph.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		95623F102DD5012B007EBFCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95623EFB2DD500E7007EBFCF /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		95623F142DD50161007EBFCF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				95623F122DD50153007EBFCF /* GraphViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		95623F442DD50218007EBFCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95623F4E2DD502B4007EBFCF /* GraphDemoKit.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95623F4F2DD502B4007EBFCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95623F542DD502B4007EBFCF /* GraphDemoKit.framework */,
+				95623F562DD502B4007EBFCF /* GraphDemoKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +160,7 @@
 				95623EF02DD500E7007EBFCF /* Sources */,
 				95623EF12DD500E7007EBFCF /* Frameworks */,
 				95623EF22DD500E7007EBFCF /* Resources */,
+				95623F592DD502BF007EBFCF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,6 +197,12 @@
 			mainGroup = 95623EEB2DD500E7007EBFCF;
 			productRefGroup = 95623EF52DD500E7007EBFCF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 95623F4F2DD502B4007EBFCF /* Products */;
+					ProjectRef = 95623F4E2DD502B4007EBFCF /* GraphDemoKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				95623EF32DD500E7007EBFCF /* GraphDemoApp */,
@@ -120,11 +210,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		95623F542DD502B4007EBFCF /* GraphDemoKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GraphDemoKit.framework;
+			remoteRef = 95623F532DD502B4007EBFCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		95623F562DD502B4007EBFCF /* GraphDemoKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GraphDemoKitTests.xctest;
+			remoteRef = 95623F552DD502B4007EBFCF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		95623EF22DD500E7007EBFCF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95623F0C2DD5010B007EBFCF /* graph.json in Resources */,
 				95623F042DD500E8007EBFCF /* LaunchScreen.storyboard in Resources */,
 				95623F012DD500E8007EBFCF /* Assets.xcassets in Resources */,
 				95623EFF2DD500E7007EBFCF /* Main.storyboard in Resources */,
@@ -139,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95623EFC2DD500E7007EBFCF /* ViewController.swift in Sources */,
+				95623F132DD50153007EBFCF /* GraphViewModel.swift in Sources */,
 				95623EF82DD500E7007EBFCF /* AppDelegate.swift in Sources */,
 				95623EFA2DD500E7007EBFCF /* SceneDelegate.swift in Sources */,
 			);
